@@ -1,0 +1,18 @@
+
+.centeri {
+  padding: 3em 3em;
+  text-align: center;
+}
+
+.navbar-brand {
+  height: 3.125em;
+  font-size: 1.125em;
+  font-weight: bolder;
+  line-height: 1.25em;
+}
+
+#logo {
+  width: 4em;
+  height: 4em ;
+  margin-top: -0.5em;
+}
