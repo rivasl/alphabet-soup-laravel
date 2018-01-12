@@ -31,7 +31,7 @@ php artisan key:generate
 - **JQuery**
 - **Inkscape** 0.91 r13725 (For logo development)
 
-## How To: ##
+## How To ##
 This project is about to check the occurence of the word entered inside of one from 3 Alphabet Soups pre-loaded. More information about technical requirements in file "Test.pdf".
 
 ## Input data ##
