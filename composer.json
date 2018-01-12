@@ -12,12 +12,13 @@
     "type": "project",
     "require": {
         "php": ">=7.0.0",
+        "components/jquery": "^3.2",
         "fideloper/proxy": "~3.3",
+        "kint-php/kint": "^2.2",
         "laravel/framework": "5.5.*",
         "laravel/tinker": "~1.0",
-        "kint-php/kint": "^2.2",
-        "components/jquery": "^3.2",
-        "laravelcollective/html": "5.5.*"
+        "laravelcollective/html": "5.5.*",
+        "twbs/bootstrap": "^3.3"
     },
     "require-dev": {
         "filp/whoops": "~2.0",
