@@ -1,4 +1,41 @@
-addEventListener('load',inicializarEventos,false);
+$(document).ready(function()
+{
+    var navItems = $('.admin-menu li > a');
+    var navListItems = $('.admin-menu li');
+    
+    navItems.click(function(e)
+    {
+        e.preventDefault();
+        navListItems.removeClass('active');
+        $(this).closest('li').addClass('active');
+
+        var target = $(this).attr('data-target-id');
+        $('#' + target).show();
+        
+        alert(target+" word:"+$('#word').val());
+    });
+});
+
+function realizaProceso(word, matrix){
+    var selected_data = {
+            "word" :  word,
+            "matrix": matrix
+    };
+
+    $.ajax({
+            data:  selected_data,
+            url:   'ajax_proceso.php',
+            type:  'GET',
+            beforeSend: function () {
+                    $("#resultado").html("Procesando, espere por favor...");
+            },
+            success:  function (response) {
+                    $("#resultado").html(response);
+            }
+    });
+}
+
+/* addEventListener('load',inicializarEventos,false);
 
 function inicializarEventos()
 {
@@ -29,4 +66,4 @@ function realizaProceso(words){
                     $("#resultado").html(response);
             }
     });
-}
+} */
