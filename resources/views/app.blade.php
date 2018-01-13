@@ -37,7 +37,6 @@
           <!-- Logo and text -->
           <a class="navbar-brand" href="#">
             <img src="img/logo-alphabet-soup.svg" id="logo" alt="">
-            
           </a>
         </div>
         <div class="collapse navbar-collapse">
@@ -69,5 +68,6 @@
     <!-- Placed at the end of the document so the pages load faster -->
     {!! Html::script('js/jquery.min.js') !!}
     {!! Html::script('js/bootstrap.min.js') !!}
+    {!! Html::script('js/javascript.js') !!}
   </body>
 </html>
