@@ -1,3 +1,8 @@
+# What is this about? #
+This excercise is about to check the occurence of the word entered 
+inside of one from 3 Alphabet Soups or matrices pre-loaded. 
+More information about technical requirements in file "Test.pdf".
+
 # Installation guide #
 
 ## Dependencies ##
