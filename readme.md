@@ -3,6 +3,12 @@ This excercise is about to check the occurence of the word entered
 inside of one from 3 Alphabet Soups or matrices pre-loaded. 
 More information about technical requirements in file "Test.pdf".
 
+<<<<<<< HEAD
+=======
+# How To #
+Select a matrix from matrices's panel, after enter a word to search in a matrix selected, to see how many times the word appears inside the matrix (occurrence)
+
+>>>>>>> master
 # Installation guide #
 
 ## Dependencies ##
@@ -35,9 +41,3 @@ php artisan key:generate
 - **Twitter Bootstrap** 4.0
 - **JQuery**
 - **Inkscape** 0.91 r13725 (For logo development)
-
-## How To ##
-This project is about to check the occurence of the word entered inside of one from 3 Alphabet Soups pre-loaded. More information about technical requirements in file "Test.pdf".
-
-## Input data ##
-Select a matrix from matrices's panel, after enter a word to search in a matrix selected, to see how many times the word appears inside the matrix (occurrence)
