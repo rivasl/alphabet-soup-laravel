@@ -42,7 +42,6 @@ class Soup
         for ($i=0; $i < $this->r; $i++) {
             array_push($this->matrix, str_split(array_shift($this->lines)));
         }
-        d($this->matrix); //TODO: QUITAR DE ACA
     }
     
     /**
