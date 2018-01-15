@@ -3,15 +3,9 @@ This excercise is about to check the occurence of the word entered
 inside of one from 3 Alphabet Soups or matrices pre-loaded. 
 More information about technical requirements in file "Test.pdf".
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 # How To #
-Select a matrix from matrices's panel, after enter a word to search in a matrix selected, to see how many times the word appears inside the matrix (occurrence)
+Enter a word to search in a matrix, after select a matrix from matrices's panel and it will automatically show how many times the word appears in the selected matrix (occurrence).
 
->>>>>>> master
-=======
->>>>>>> menu
 # Installation guide #
 
 ## Dependencies ##
