@@ -1,8 +1,13 @@
+/**
+ * Preparation of the home page
+ */
 $(document).ready(function()
 {
     var navItems = $('.admin-menu li > a');
     var navListItems = $('.admin-menu li');
     
+    $('#word').val('OIE'); // Word by default
+
     navItems.click(function(e)
     {
         e.preventDefault();
@@ -11,59 +16,32 @@ $(document).ready(function()
 
         var target = $(this).attr('data-target-id');
         $('#' + target).show();
+
+        console.log((target+" word:"+$('#word').val()));
         
-        alert(target+" word:"+$('#word').val());
+        checkTheSoup($('#word').val(), target);
     });
 });
 
-function realizaProceso(word, matrix){
-    var selected_data = {
-            "word" :  word,
-            "matrix": matrix
-    };
+/**
+ * checkTheSoup Make request to server to check the word inside the matrix
+ * 
+ * @param {string} word 
+ * @param {string} matrix 
+ */
+function checkTheSoup(word, matrix){
+        var selected_data = {"word": word, "matrix": matrix};
 
-    $.ajax({
-            data:  selected_data,
-            url:   'ajax_proceso.php',
-            type:  'GET',
-            beforeSend: function () {
-                    $("#resultado").html("Procesando, espere por favor...");
-            },
-            success:  function (response) {
-                    $("#resultado").html(response);
-            }
-    });
+        $.ajax({
+                data:  selected_data,
+                url:   'checkSoup'+'/'+selected_data.word+'/'+selected_data.matrix,
+                type:  'GET',
+
+                beforeSend: function () {
+                        $("#ocurrence").val("Procesando, espere por favor...");
+                },
+                success:  function (response) {
+                        $("#ocurrence").val(response);
+                }
+        });
 }
-
-/* addEventListener('load',inicializarEventos,false);
-
-function inicializarEventos()
-{
-    
-    var ob=document.getElementById('boton1'); 
-    ob.addEventListener('click', presionBoton, false);
-}
-
-function presionBoton(e)
-{
-    var words=document.getElementById('words');
-    realizaProceso(words.value);
-}
-
-function realizaProceso(words){
-    var palabras = {
-            "words" :  words
-    };
-
-    $.ajax({
-            data:  palabras,
-            url:   'ajax_proceso.php',
-            type:  'GET',
-            beforeSend: function () {
-                    $("#resultado").html("Procesando, espere por favor...");
-            },
-            success:  function (response) {
-                    $("#resultado").html(response);
-            }
-    });
-} */
