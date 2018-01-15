@@ -15,5 +15,4 @@ Route::get('/', function () {
     return view('home');
 });
 
-// Route::get('/index/{word}/{matrix}','SoupsController@index');
-Route::get('/index/{word?}','SoupsController@index');
+Route::get('/checkSoup/{word}/{matrix}','SoupsController@index');

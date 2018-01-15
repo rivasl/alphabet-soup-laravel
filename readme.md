@@ -4,11 +4,14 @@ inside of one from 3 Alphabet Soups or matrices pre-loaded.
 More information about technical requirements in file "Test.pdf".
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 # How To #
 Select a matrix from matrices's panel, after enter a word to search in a matrix selected, to see how many times the word appears inside the matrix (occurrence)
 
 >>>>>>> master
+=======
+>>>>>>> menu
 # Installation guide #
 
 ## Dependencies ##
